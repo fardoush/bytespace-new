@@ -19,7 +19,18 @@ const Navbar = () => {
     return (
         <header className="sticky top-0 z-50 w-full bg-brand-blue backdrop-blur-md transition-colors duration-300">
             <div className="max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-[120px]">
-                <div className="flex items-center justify-between h-[83px]">
+                {/* <div
+                    className="absolute inset-0 -z-10 opacity-20"
+                    style={{
+                        backgroundImage: `
+            linear-gradient(to right, #ffffff 1px, transparent 1px),
+            linear-gradient(to bottom, #ffffff 1px, transparent 1px)
+          `,
+                        backgroundSize: "120px 120px",
+                    }}
+                /> */}
+                <div className="hero-grid-bg absolute inset-0 -z-10 opacity-20 pointer-events-none" />
+                <div className="flex items-center justify-between h-[120px]">
                     {/* logo  */}
                     <div className="z-60">
                         <Link href="/">
