@@ -2,8 +2,8 @@
 import React from 'react';
 import { MdDesignServices, MdOutlineDeveloperMode, MdOutlineLaptop } from 'react-icons/md';
 
-const ExploreDiverse = () => {
-    interface CategoryItem {
+
+ interface CategoryItem {
         id: number;
         title: string;
         icon: React.ReactNode;
@@ -57,6 +57,10 @@ const ExploreDiverse = () => {
             )
         },
     ]
+
+
+const ExploreDiverse = () => {
+   
     return (
         <section className="w-full mx-auto py-10 px-5 md:px-10 xl:px-[120px]">
             <div className="w-full max-w-[1440px] mx-auto flex flex-col items-center text-center">
