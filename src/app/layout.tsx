@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/shared/Navbar";
+import Footer from "./components/shared/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -37,9 +38,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${poppins.variable} ${satoshi.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen flex flex-col">
         <Navbar/>
         <main className="">{children}</main>
+        <Footer/>
       </body>
     </html>
   );

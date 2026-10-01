@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-blue: #0052FF;
-  --color-brand-lime: #D2FF00;
-  --color-brand-dark: #0F172A;
+  --color-brand-blue: #003BE2;
+  --color-brand-lime: #D4FB20;
+  --color-brand-black: #000000;
+  --color-brand-dark: #242528;
   --color-brand-muted: #64748B;
   --color-brand-card-bg: #F8FAFC;
   --color-brand-border: #E2E8F0;
@@ -23,7 +24,7 @@
 } */
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -36,17 +37,38 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-poppins), sans-serif;
-  color: var(--color-brand-dark);
 }
 
+
 /* Hero Section*/
-.bg-hero-pattern {
+/* globals.css */
+.hero-grid-bg {
+    background-image: linear-gradient(to right, #ffffff  2px, transparent 1px),
+                      linear-gradient(to bottom, #ffffff  2px, transparent 1px);
+    background-size: 120px 120px;
+    opacity: 0.1;
+}
+
+/* Tablet  */
+@media (max-width: 1023px) {
+    .hero-grid-bg {
+        background-size: 60px 60px !important;
+    }
+}
+
+/* Mobile  */
+@media (max-width: 640px) {
+    .hero-grid-bg {
+        background-size: 40px 40px !important; /* ba 30px 30px */
+    }
+}
+/* .bg-hero-pattern {
   background-color: var(--color-brand-blue);
   background-image: 
     linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
   background-size: 40px 40px;
-}
+} */
 
 /* Custom UI Utility Classes */
 @utility btn-lime {
@@ -99,20 +121,135 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+/* hero banner start  */
+
+@media (max-width: 1415px) {
+
+    /* Left Lime Shape */
+    .hero-shape-left-lime {
+        width: 240px !important;
+        height: 240px !important;
+        left: -40px !important;
+        top: 80px !important;
+    }
+
+    /* Right Lime Shape */
+    .hero-shape-right-lime {
+        width: 270px !important;
+        height: 270px !important;
+        right: -50px !important;
+        top: 80px !important;
+    }
+
+    /* Left White Shape */
+    .hero-shape-left-white {
+        width: 120px !important;
+        height: 120px !important;
+        left: 5% !important;
+        top: 40% !important;
+    }
+
+    /* Right White Shape */
+    .hero-shape-right-white {
+        width: 130px !important;
+        height: 130px !important;
+        right: 4% !important;
+        top: 38% !important;
+    }
+
+    /* Circle Shape (Bottom Left) */
+    .hero-shape-circle {
+        width: 240px !important;
+        height: 240px !important;
+        left: 0px !important;
+    }
+
+    /* Bottom Right White Shape */
+    .hero-shape-bottom-white {
+        width: 230px !important;
+        height: 230px !important;
+        right: 0px !important;
+    }
 }
 
-::-webkit-scrollbar-track {
-  background: #F1F5F9;
+@media(max-width:1200px){
+   /* Left Lime Shape */
+    .hero-shape-left-lime {
+        width: 200px !important;
+        height: 200px !important;
+        left: -40px !important;
+        top: 80px !important;
+    }
+
+    /* Right Lime Shape */
+    .hero-shape-right-lime {
+        width: 220px !important;
+        height: 220px !important;
+        right: -50px !important;
+        top: 80px !important;
+    }
+    .hero-shape-circle {
+        width: 200px !important;
+        height: 200px !important;
+        left: 0px !important;
+    }
 }
 
-::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
-  border-radius: 4px;
-}
+@media(max-width:1023px){
+     .hero-shape-left-lime {
+        width: 200px !important;
+        height: 200px !important;
+        left: -40px !important;
+        top: 80px !important;
+    }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+    /* Right Lime Shape */
+    .hero-shape-right-lime {
+        width: 180px !important;
+        height: 180px !important;
+        right: -50px !important;
+        top: 80px !important;
+    }
+   .hero-shape-bottom-white {
+        width: 180px !important;
+        height: 180px !important;
+        right: 0px !important;
+        bottom: 88px !important;
+    }
+    .hero-shape-circle {
+        width: 160px !important;
+        height: 160px !important;
+        left: 0px !important;
+        bottom:130px
+    }
+}
+@media (min-width:768px) and (max-width:899px){
+  .lime-circle-shape{
+    height:288px !important;
+  }
+  .ui-card{
+    left:9% !important;
+  }
+  .learning-progress-card{
+    right:16% !important;
+  }
+}
+/* Mobile Devices */
+@media (max-width: 640px) {
+  .hero-banner{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+  }
+  .lime-circle-shape,
+  .student-img-inner,
+    .hero-shape-left-lime,
+    .hero-shape-right-lime,
+    .hero-shape-left-white,
+    .hero-shape-right-white,
+    .hero-shape-circle,
+    .hero-shape-bottom-white {
+        display: none !important;
+    }
 }
