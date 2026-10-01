@@ -3,7 +3,7 @@ import React from 'react';
 const LearningProgressCard = () => {
     return (
         <div className='w-[232px] rounded-2xl bg-white px-5 py-4 text-left shadow-xl'>
-            <p className="text-xs font-medium text-[#242528]">
+            <p className="text-xs font-medium text-[#242528] mb-2">
                 Learning Progress
             </p>
 

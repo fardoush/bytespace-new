@@ -62,8 +62,8 @@ const categories: CategoryItem[] = [
 const ExploreDiverse = () => {
 
     return (
-        <section className="w-full mx-auto pb-10 md:pb-[60px] lg:pb-[120px] px-5 md:px-10 xl:px-[120px]">
-            <div className="w-full max-w-[1440px] mx-auto flex flex-col items-center text-center">
+        <section className="w-full mx-auto pb-10 md:pb-[60px] lg:pb-[120px] px-5 md:px-10 xl:px-10">
+            <div className="w-full max-w-[1200px] mx-auto flex flex-col items-center text-center">
                 <h2 className="text-[28px] md:text-[30px] lg:text-[36px] font-semibold text-[#040819] leading-[120%] tracking-[-1%] mb-4">
                     Explore Diverse Learning Paths at Bytespace
                 </h2>
