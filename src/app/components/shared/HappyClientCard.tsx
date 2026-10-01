@@ -1,19 +1,18 @@
-import { Star } from 'lucide-react';
+
 import Image from 'next/image';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 
 const HappyClientCard = () => {
     const clientImg = [
-        { img: "https://plus.unsplash.com/premium_photo-1690395794791-e85944b25c0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { img: "https://images.unsplash.com/photo-1639747280804-dd2d6b3d88ac?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { img: "https://plus.unsplash.com/premium_photo-1690395794791-e85944b25c0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { img: "https://plus.unsplash.com/premium_photo-1690395794791-e85944b25c0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { img: "https://plus.unsplash.com/premium_photo-1690395794791-e85944b25c0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { img: "https://plus.unsplash.com/premium_photo-1690395794791-e85944b25c0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { img: "https://plus.unsplash.com/premium_photo-1690395794791-e85944b25c0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { img: "https://plus.unsplash.com/premium_photo-1690395794791-e85944b25c0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { img: "https://plus.unsplash.com/premium_photo-1690395794791-e85944b25c0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+        { img: "/clients/client1.jpg" },
+        { img: "/clients/clients2.jpg" },
+        { img: "/clients/client3.jpg" },
+        { img: "/clients/client4.jpg" },
+        { img: "/clients/client5.jpg" },
+        { img: "/clients/client6.jpg" },
+        { img: "/clients/client7.jpg" },
+     
     ]
     return (
         <div className="rounded-2xl bg-white px-4 py-4 text-left shadow-xl">
@@ -28,7 +27,7 @@ const HappyClientCard = () => {
             <div className="mt-1 flex items-center">
                 <div className="flex -space-x-4">
                     {clientImg.slice(0, 7).map((item, index) => (
-                        <img
+                        <Image
                             key={index}
                             src={item.img}
                             alt={`Client ${index + 1}`}
