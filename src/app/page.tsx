@@ -7,6 +7,7 @@ import DiscoverCourses from "./components/home/DiscoverCourses";
 import CTASection from "./components/home/CtaSection";
 import ByteSpaceGrowthSection from "./components/home/ByteSpaceGrowthSection";
 
+
 export default function Home() {
   return (
     <div className=" ">

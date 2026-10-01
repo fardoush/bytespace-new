@@ -4,7 +4,7 @@ import { CourseManagementBlock } from '../shared/CourseManagementBlock';
 
 const ByteSpaceGrowthSection = () => {
   return (
-    <section className="relative w-full overflow-hidden py-16 md:py-24 px-4 sm:px-6 md:px-10 bg-white">
+    <section id='creators' className="relative w-full overflow-hidden py-16 md:py-24 px-4 sm:px-6 md:px-10 bg-white">
       {/* Background Gradient Blurs (5 Spots) */}
       <div className="pointer-events-none absolute inset-0 z-0">
         {/* 1. Top Left Lime Glow */}

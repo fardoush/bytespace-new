@@ -5,16 +5,11 @@ import UiCards from '../shared/UiCards';
 import LearningProgressCard from '../shared/LearningProgressCard';
 import HappyClientCard from '../shared/HappyClientCard';
 
+
 const HeroBanner = () => {
     return (
-        <section className=" hero-banner relative isolate  overflow-hidden bg-brand-blue min-h-[700px] md:min-h-[760px] lg:min-h-[850px] md:pt-[49px] pt-0 px-5">
+        <section id='home'  className=" hero-banner relative isolate  overflow-hidden bg-brand-blue min-h-[700px] md:min-h-[760px] lg:min-h-[850px] md:pt-[49px] pt-0 px-5">
             {/* Grid BG  */}
-            {/* <div className="absolute inset-0 -z-10 opacity-20" style={{
-                backgroundImage: `linear-gradient(to right, #ffffff 1px, transparent 1px),
-                linear-gradient(to bottom, #ffffff 1px, transparent 1px)`, backgroundSize: "120px 120px"
-            }}>
-
-            </div> */}
             <div className="hero-grid-bg absolute inset-0 -z-10 opacity-20 pointer-events-none" />
 
             {/* left lime shape  */}
@@ -101,7 +96,8 @@ const HeroBanner = () => {
 
                     <div className=" px-4 sm:px-6 flex  h-[44px] md:h-[52px] flex-1 items-center rounded-full bg-white ">
                         <Search size={22} className='sm:mr-3 shrink-0 text-[#82868E] ' />
-                        <input type="text" placeholder="Course, topic, creator" className="  py-3 md:py-0 w-full bg-transparent text-sm text-[#242528] outline-none placeholder:text-[#82868E] sm:text-base" />
+                        <input type="text"
+                 placeholder="Course, topic, creator" className="  py-3 md:py-0 w-full bg-transparent text-sm text-[#242528] outline-none placeholder:text-[#82868E] sm:text-base" />
                     </div>
                     <button className="h-[44px] md:h-[52px] bg-brand-lime rounded-full px-8 text-sm font-medium  text-[#242528] transition hover:scale-105  sm:text-lg">Search</button>
 
@@ -109,10 +105,10 @@ const HeroBanner = () => {
             </div>
 
             {/* Hero visual  */}
-            <div className="relative  mx-auto w-full max-w-[1149px] mt-10">
+            <div className="relative  mx-auto w-full xl:max-w-[1149px] mt-10">
 
                 {/* Lime Circle */}
-                <div className="lime-circle-shape absolute left-1/2 bottom-[-8px] -z-10 w-[95%] xl:w-[1149px] -translate-x-1/2 h-[234px] md:h-[328px]  lg:h-[350px]" >
+                <div className="lime-circle-shape absolute left-1/2 -bottom-[10%] -z-10 w-[93%] xl:w-[1149px] -translate-x-1/2 h-[234px] md:h-[328px]  lg:h-[363px]" >
                     <Image
                         src="/banner-image-shape.svg"
                         alt="Student"
@@ -135,23 +131,23 @@ const HeroBanner = () => {
                     />
                 </div>
 
-             <div className="">
-                   {/* UI Cards  */}
-                <div className="ui-card absolute left-[7%] top-[75px] lg:top-[97px] z-30 hidden sm:block md:left-[19%] lg:left-[21%]">
-                    <UiCards />
-                </div>
+                <div className="">
+                    {/* UI Cards  */}
+                    <div className="ui-card absolute left-[7%] top-[75px] lg:top-[97px] z-30 hidden sm:block md:left-[19%] lg:left-[21%]">
+                        <UiCards />
+                    </div>
 
-                {/* Learning Progress */}
-                <div className="learning-progress-card absolute right-[13%] top-[72px] lg:top-[107px] z-30 hidden  sm:block md:right-[23%] lg:right-[25%]">
-                    <LearningProgressCard />
-                </div>
+                    {/* Learning Progress */}
+                    <div className="learning-progress-card absolute right-[13%] top-[72px] lg:top-[107px] z-30 hidden  sm:block md:right-[23%] lg:right-[25%]">
+                        <LearningProgressCard />
+                    </div>
 
-                {/* Happy Students */}
-                <div className=" happy-card absolute md:bottom-[37px] bottom-[56px] left-[19%] z-30 hidden rounded-2xl sm:block md:left-[15%] lg:left-[15%]">
+                    {/* Happy Students */}
+                    <div className=" happy-card absolute md:bottom-[37px] bottom-[56px] left-[19%] z-30 hidden rounded-2xl sm:block md:left-[15%] lg:left-[15%]">
 
-                    <HappyClientCard />
+                        <HappyClientCard />
+                    </div>
                 </div>
-             </div>
             </div>
         </section>
     );

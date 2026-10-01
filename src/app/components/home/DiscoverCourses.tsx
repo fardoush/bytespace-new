@@ -4,7 +4,6 @@ import React, { useState, useMemo } from "react";
 import { Course } from "../types/course";
 import { CourseCard } from "../shared/CourseCard";
 
-
 const CATEGORIES = [
     "Featured",
     "Music",
@@ -406,7 +405,7 @@ export default function DiscoverCourses() {
         : CATEGORIES.slice(0, 18);
 
     return (
-        <section className="w-full bg-white px-5 py-10 md:py-[60px] lg:py-[72px] md:px-10 xl:px-20">
+        <section id="courses" className="w-full bg-white px-5 py-10 md:py-[60px] lg:py-[72px] md:px-10 xl:px-20">
             <div className="mx-auto max-w-[1200px]">
                 {/* Section Header */}
                 <div className=" text-center">
